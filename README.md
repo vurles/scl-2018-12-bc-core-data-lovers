@@ -78,6 +78,7 @@ Se realiza pruebas con seis usuarios, quienes prueban la página y:
 Usuario1: Sugiere agregar la opción de ver más países/indicadores en la parte inferior del PopUp del detalle del indicador..
 
 Usuario2: Sugiere agregar un pequeño enlace de noticias más relevantes de alguno de los indicadores mundiales. 
+
 Usuario3: Sugiere utilizar los colores oficiales del Banco Mundial.
 
 Todos los Usuarios: Sugieren mostrar un listado con todos los países en orden alfabético. En vez de seleccionar primero el continente, y luego el país.
@@ -95,7 +96,6 @@ Agregando los botones de PAÍS e INDICADOR. ![](FlujoIndicador6b.jpg)
 Agregando enlace de noticias. ![](IMAGENJPG)
 
 Mostrando un listado con todos los países en orden alfabético. ![](FlujoPaís1b.jpg)
-![](FlujoIndicador6b.jpg)
 
 #### Prototipo de alta fidelidad
 
@@ -149,7 +149,7 @@ Pruebas unitarias para las funciones encargadas de _procesar_, _filtrar_ y _orde
   cálculos estadísticos básicos para ser mostrados de acuerdo a la data
   proporcionada.
 
-Estas son ideas de funciones que podrías implementar, pero esto depende de tu
+Estas son ideas de funciones que se pueden implementar, pero esto depende de la
 propia implementación.
 
 El archivo `src/data.js` tiene que tener una cobertura del 70% de _statements_
