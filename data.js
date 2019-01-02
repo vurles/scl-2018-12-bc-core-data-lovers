@@ -7,3 +7,4 @@ let data =;
 function initData() {
   data = convertObjectToArray(WORLDBANK);
   console.log(data);
+}
