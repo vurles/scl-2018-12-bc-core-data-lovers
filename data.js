@@ -1,8 +1,9 @@
-// esta es una función de ejemplo
-// puedes ver como agregamos la función a nuestro objeto global window
+// creo una variable para almacenar mi data
 
-const example = () => {
-  return 'example';
-};
+let data =;
 
-window.example = example;
+function initData() {
+  data = convertObjectToArray(WORLDBANK);
+   console.log(data);
+}
+  
