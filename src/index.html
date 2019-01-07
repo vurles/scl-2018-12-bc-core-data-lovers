@@ -2,49 +2,100 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="./CSS/style.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-
+     <title>Data Lovers</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+     <link rel="stylesheet" href="style.css" />
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  </head>
   <body>
     <div id="root">
       <header>
-        <!-- <img src ="../src/img/logo-banco-mundial.jpg" class = 'logo-bank'> -->
-        <nav class="navbar navbar-light bg-light">
-          <a class="navbar-brand">Estadísticas del mundo real para la comunidad del emprendedora</a>
-          <p class="text-right">
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="container">
+        <img src ="../src/img/logo-banco-mundial.jpg" class = 'logo-bank'>
+        </div>
+      </header>
+    <div class="container">
+      <section class="main row">
+        <p class="col-md-12">Estadísticas del mundo real para la comunidad del emprendedora</p>
+      </section>
+    <div class="container">
+      <br>
+      <header2>
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">         
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle collapsed" data-toggle="collapsed" data-target="#navbar-1">
+                 <span class="sr-only">Menu</span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+               </button>
+               <a href="#" class="navbar-brand">Buscar datos por</a>  
+            </div>
+            <div class="container">
+                  <div class="collapsed navbar-collapse" id="navbar1">
+              <ul class="nav navbar-nav">
+                <!--<li class="active"><a href="">País</a></li>-->
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">País <span class="caret"></span>
+                  </a> 
+                  <ul class="dropdown-menu">
+                   <li><a href="#">México</a></li>
+                   <li><a href="#">Brasil</a></li>
+                   <li><a href="#">Perú</a></li>
+                   <li><a href="#">Chile</a></li> 
+                 </ul>
+                 </li>
+                 <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Indicador <span class="caret"></span>
+                 </a> 
+                 <ul class="dropdown-menu">
+                   <li><a href="#">Demográfico</a></li>
+                   <li><a href="#">Económico</a></li>
+                   <li><a href="#">Comercial</a></li>
+                 </ul>
+                </li> 
+                </ul> 
+
+                <!--<ul class="nav navbar-nav navbar-right"></ul>-->
+
+        </nav>
+      </header2>
+    </div>  
+
+        <!--<nav class="navbar navbar-light bg-light">
+          <a class="navbar-brand">Estadísticas del mundo real para la comunidad del emprendedora</a>-->
+        <!--<p class="text-right">-->
+         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
       <a class="nav-item nav-link" href="#">Quienes somos</a>
       <a class="nav-item nav-link" href="#">Qué hacemos</a>
       <a class="nav-item nav-link" href="#">Noticias<span class="sr-only">(current)</span></a>
-    </p>
     </div>
-  </div>
+    </div>
         </nav>
-      </header>
       <section class = "container">
+      <!--<section class = "container-fluid">-->  
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
           </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="img/carrucel1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="img/carrucel1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="img/carrucel2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="img/carrucel3.jpg" class="d-block w-100" alt="...">
             </div>
-            <div class="carousel-item">
-              <img src="img/carrucel2.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="img/carrucel3.jpg" class="d-block w-100" alt="...">
-            </div>
-          </div>
+        </div>
           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
@@ -56,46 +107,56 @@
         </br>
         </div>
       </section>
-      <section>
-        <div id="INDICADORES DH">INDICADORES DEL DESARROLLO HUMANO
-        </div>
+      <div class="container">
+      <div class="indh row">
+      <div class="col-md-12">INDICADORES DEL DESARROLLO HUMANO
+        <!--<div id="INDICADORESDH">INDICADORES DEL DESARROLLO HUMANO-->
+      </div>
+      </div>
       </br>
-  </div>
-</div>
+      </div>
         <!--<p class="text-right">
             <p id="DATOS">DATOS</p>-->
         <!--<form class="form-inline">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">País</button>
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Indicador</button>
           </form>-->
-          <div class="input-group mb-3">
+  
+  <!--<section class = "container">        
+  <div class="input-group mb-3">
   <div class="input-group-prepend">
     <button class="btn btn-outline-secondary" type="button">País</button>
-  </div>
-  <select class="custom-select" id="inputGroupSelect03" aria-label="Example select with button addon">
+      </div>
+  <select class="custom-select" id="inputGroupSelectPais" aria-label="Example select with button addon">
     <option selected>Choose...</option>
     <option value="1">Chile</option>
     <option value="2">Perú</option>
     <option value="3">Brasil</option>
     <option value="4">México</option>
   </select>
-</div>
-<div class="input-group mb-3">
-  <div class="input-group-prepend">
+     </div>
+     <div class="input-group mb-3">
+     <div class="input-group-prepend">
     <button class="btn btn-outline-secondary" type="button">Indicador</button>
-  </div>
-  <select class="custom-select" id="inputGroupSelect03" aria-label="Example select with button addon">
+     </div>
+  <select class="custom-select" id="inputGroupSelectIndicador" aria-label="Example select with button addon">
     <option selected>Choose...</option>
     <option value="1">Demográfico</option>
     <option value="2">Económico</option>
     <option value="3">Comercial</option>
   </select>
-</div>
+     </div>
       </section>
-      <div id = 'ejemplo'>
-         <button id ='toShow'>MOSTRAR</button>
-      </div>
-    </div>
+     </div>-->
+     </div> <!--es el cierre del div del root-->
+    
+    <!-- <div>Footer<div class="modal-footer"> -->
+  <footer>
+    <div class="container">
+      <p>footer</p>
+    </div>  
+  </footer>    
+
 <!-- enlaces de scripts-->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
@@ -105,5 +166,31 @@
     <script src="./JS/main.js"></script>
     <script src="./JS/boots.js"></script>
   </body>
+  
+  <!-- Button trigger modal
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+  Launch demo modal
+</button>
+
+ Modal 
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Volver al inicio</button>
+      </div>
+    </div>
+  </div>
+</div> -->
 </html>
 
