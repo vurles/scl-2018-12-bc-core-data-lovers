@@ -3,8 +3,24 @@ global.assert = require('chai').assert;
 require('../src/data.js');
 
 
-const country = ['PER'];
-const ind = ['SL.TLF.PART.FE.ZS']
+//const country = ['PER'];
+//const ind = ['SL.TLF.PART.FE.ZS']
+//var countries = {
+//	"PER": {
+//		"name" : "Peru",
+//		"indicator" : "SL.TLF.PART.FE.ZS"
+//		},
+//	"CHI": {
+//		"name" : "Peru",
+//		"indicator" : "SL.TLF.PART.FE.ZS"
+//		},
+//};
+
+var myfunc = function getCountryIndicator(code)
+{
+	return countries[code]["indicator"];
+}
+
 var countries = {
 	"PER": {
 		"name" : "Peru",
@@ -15,11 +31,6 @@ var countries = {
 		"indicator" : "SL.TLF.PART.FE.ZS"
 		},
 };
-
-var myfunc = function getCountryIndicator(code)
-{
-	return countries[code]["indicator"];
-}
 
 describe(myfunc, () => {
   it('is a function', () => {
