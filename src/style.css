@@ -19,27 +19,31 @@ logo-bank{
 .navbar-brand {
 	background: #f2f2f2;
 	color: #2760be;
+	text-align: right;
+	display: inline;
 }
 
-.navbar1 {
-	color: #2760be;
+.Parámetros {
+	display: inline;
 }
+
+.navbar navbar-expand-lg navbar-light bg-light{
+display: inline;
+text-align: right;
+}
+
+.header2 {
+display: inline; 
+
+}
+
+/*.navbar1 {
+	color: #2760be;
+}*/
 
 .indh {
 	background: #f2f2f2;
-	color: #2760be;
-}
-
-.date {
-
-}
-
-.date-one{
-
-}
-
-.date-two{
-	
+	color: #2760be;	
 }
 
 footer {
