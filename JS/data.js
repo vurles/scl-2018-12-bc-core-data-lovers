@@ -1,12 +1,16 @@
 // creo una variable para almacenar mi data
+//const dataBank = WORLDBANK.worldbank;
 
-//const data = (WORLDBANK);
+//const nombrePais = (dataBank) => {
+//  console.log(dataBank);
+//}
 
-//console.tabla(WORLDBANK);
+const WORLDBANK = [
+{
+"countryName": "Perú",
+"countryCode": "PER",
+"indicatorName": "Empleo de tiempo parcial, mujeres (% del total de mujeres empleadas)",
+"indicatorCode": "SL.TLF.PART.FE.ZS"
 
-//const filterCountry = (WORLDBANK, condition) => {
-//Devuelve los elementos de una matriz que cumplen la condición especificada 
-const population = WORLDBANK.PER.indicators.filter(pop => {
-  return pop.indicatorCode.slice(0, 6) === 'SP.POP';
-});
-
+}
+] 
