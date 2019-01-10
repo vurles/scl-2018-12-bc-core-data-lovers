@@ -46,7 +46,10 @@ display: inline;
 	color: #2760be;	
 }
 
-footer {
-	background: #363636;
-	color: #FFF;
-}
+#footer{
+    height: 70px;
+    background-color: #19191C;
+    margin-top: 20px;
+    padding: 30px;
+    
+} 
