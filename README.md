@@ -41,7 +41,7 @@ Este sitio ha sido diseñado para facilitar la búsqueda, la descarga y el uso d
  
 **![Search Bar](https://lh4.googleusercontent.com/0m8_1EOuentL1NdjpfAxtN9Zz1tAYcodp_IPmmA2INu6LO8fU_WlmY70t22uY3ALCzHSHP2opDj7lNXNPWuOnljB4T6JbMDceBpX0dPT9guZjb74H8WzeWKkAhunyQ4yJXZ5v0H0)**
 
-Usted puede buscar por indicadores, países y temas. En el cuadro de búsqueda, cuando escriba un texto podrá ver una lista de resultados coincidentes; simplemente, seleccione uno de los términos coincidentes para ver el resultado al instante. Tenga presente que puede visualizar sólo un indicador a la vez.
+Usted puede buscar por indicadores, países y años. Seleccione uno de los términos coincidentes para ver el resultado al instante. Tenga presente que puede visualizar sólo un indicador a la vez.
 
 Para empezar de nuevo, cliquee en el ícono de "volver al inicio" ubicado en la esquina inferior derecha de su pantalla.
 
@@ -57,11 +57,11 @@ Para empezar de nuevo, cliquee en el ícono de "volver al inicio" ubicado en la 
 
 ## Consideraciones para el diseño de la interfaz del usuario
 
-Esta página contiene un título que hace referencia a la utilización de datos del Banco Mundial.
+Esta página contiene el logo oficial del Banco Mundial que hace referencia al mismo.
 
-Imagen de gran tamaño relacionada con un impacto social. 
+Barra de búsqueda y menú del sitio.
 
-Barra de búsqueda y menú del sitio. 
+Imagen de gran tamaño relacionada con un impacto social.  
 
 Y una vez creado este diseño simple se realiza el primer testeo.
 
@@ -132,40 +132,12 @@ El código creado en JavaScript(ES6) es una fórmula que permite visualizar la d
 
 Pruebas unitarias para las funciones encargadas de _procesar_, _filtrar_ y _ordenar_ la data, así como _calcular_ estadísticas.
 
-`src/data.js`:
-
-* `filterData(data, condition)`: esta función `filter` o filtrar recibiría la
-  data, y nos retornaría aquellos datos que sí cumplan con la condición.
-
-* `sortData(data, sortBy, sortOrder)`: esta función `sort` u ordenar
-  recibe tres parámetros.
-  El primer parámetro, `data`, nos entrega los datos.
-  El segundo parámetro, `sortBy`, nos dice con respecto a cuál de los campos de
-  la data se quiere ordenar.
-  El tercer parámetro, `sortOrder`, indica si se quiere ordenar de manera
-  ascendente o descendente.
-
-* `computeStats(data)`: la función `compute` o calcular, nos permitirá hacer
-  cálculos estadísticos básicos para ser mostrados de acuerdo a la data
-  proporcionada.
-
-Estas son ideas de funciones que se pueden implementar, pero esto depende de la
-propia implementación.
-
-El archivo `src/data.js` tiene que tener una cobertura del 70% de _statements_
-(_sentencias_), _functions_ (_funciones_), _lines_ (_líneas_), y _branches_
-(_ramas_).
-
-Estas funciones deben ser [_puras_](https://medium.com/laboratoria-developers/introducci%C3%B3n-a-la-programaci%C3%B3n-funcional-en-javascript-parte-2-funciones-puras-b99e08c2895d)
-e independientes del DOM. Estas funciones serán después usadas desde el archivo
-`src/main.js`, al cargar la página, y cada vez que el usuario interactúe (click,
-filtrado, ordenado, ...).
-
 ## Test Realizado
 
 ## Planificación
 
 Es posible ver la planificación del proyecto en el siguiente link:
+
 (https://trello.com/b/NafHqb1L)
 
 ## Contenido de referencia
@@ -173,16 +145,3 @@ Es posible ver la planificación del proyecto en el siguiente link:
 (http://www.bancomundial.org/)
 
 ## Resultado final
-
-## Parte Opcional (Hacker edition)
-
-Features/características extra sugeridas:
-
-* En lugar de consumir la data estática brindada en este repositorio, puedes
-  consumir la data de forma dinámica, cargando un archivo JSON por medio de
-  `fetch`. La carpeta `src/data` contiene una versión `.js` y una `.json` de
-  de cada set datos.
-* Agregarle a tu interfaz de usuario implementada visualizaciones gráficas. Para
-  ello te recomendamos explorar librerías de gráficas como [Chart.js](https://www.chartjs.org/)
-  o [Google Charts](https://developers.google.com/chart/).
-* 100% Coverage
