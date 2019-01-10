@@ -26,6 +26,13 @@ body {
 	display: inline;
 }
 
+#selectCountry {
+	display: inline;
+}
+
+#selectIndicator {
+	display: inline;
+}
 .navbar navbar-expand-lg navbar-light bg-light{
 	display: inline;
 	text-align: right;
