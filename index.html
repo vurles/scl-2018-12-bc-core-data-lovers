@@ -36,96 +36,42 @@
 						</header>
 						
 						<div id="root">
-							<!--<div class="container">
-								
-								<section class="main row"//no
-									
-									<p class="col-md-12">Estadísticas del mundo real para la comunidad del emprendedora</p>
-								
-								<class="nav navbar-nav navbar-right"/tampoco
-								<div class="container">
-									<div class = "header2">
-										<nav class="navbar navbar-default">
-											<div class="container-fluid">         
-												<div class="navbar-header">
-												 <button type="button" class="navbar-toggle collapsed" data-toggle="collapsed" data-target="#navbar-1">
-													 <span class="sr-only">Menu</span>
-													 <span class="icon-bar"></span>
-													 <span class="icon-bar"></span>
-													 <span class="icon-bar"></span>
-												 </button>
-											 </nav>
 
-												 <a href="#" class="navbar-brand"></a>  
-											 </div>
-										 </div>
-									 </div>
-								 </div>
-							 </div>
-							</div>
-						</section>
-							 
-							 <div class="container">
-								<div class="collapsed navbar-collapse" class="navbar1">
-									<ul class="nav navbar-nav">
-										
-										<li class="active"><a href="">País</a></li>
-										
-										<li class="dropdown">
-											<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">País <span class="caret"></span>
-											</a> 
-											<ul class="dropdown-menu">
-											 <li><a href="#">México</a></li>
-											 <li><a href="#">Brasil</a></li>
-											 <li><a href="#">Perú</a></li>
-											 <li><a href="#">Chile</a></li> 
-										 </ul>
-									 </li>
-									 <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Indicador <span class="caret"></span>
-									 </a> 
-									 <ul class="dropdown-menu">
-										 <li><a href="#">Demográfico</a></li>
-										 <li><a href="#">Económico</a></li>
-										 <li><a href="#">Comercial</a></li>
-									 </ul>
-								 </li> 
-								</ul-->
+							<section class="container">
+								<section class="Parámetros">
+									<p>Buscar datos por</p>
+									<!--Select con opciones que se manejarian desde el DOM-->
+									<select id="País">
+										<option value="0">País</option>
+										<option value="México">México</option>
+										<option value="Brasil">Brasil</option>
+										<option value="Perú">Perú</option>
+										<option value="Chile">Chile</option>
+									</select>
 
-								<section class="container">
-									<section class="Parámetros">
-										<p>Buscar datos por</p>
-										<!--Select con opciones que se manejarian desde el DOM-->
-										<select id="País">
-											<option value="0">País</option>
-											<option value="México">México</option>
-											<option value="Brasil">Brasil</option>
-											<option value="Perú">Perú</option>
-											<option value="Chile">Chile</option>
-										</select>
+									<select id="Indicador">
+										<option value="0">Indicador</option>
+										<option value="Demográfico">Demográfico</option>
+										<option value="Económico">Económico</option>
+										<option value="Comercial">Comercial</option>
+									</select>
+								</section>  
 
-										<select id="Indicador">
-											<option value="0">Indicador</option>
-											<option value="Demográfico">Demográfico</option>
-											<option value="Económico">Económico</option>
-											<option value="Comercial">Comercial</option>
-										</select>
-									</section>  
-
-									<section class="date">
-										<section class="container">
-											<p>AÑO</p>
-											<label>Desde<input type="number" id="date-one" max="2017" min="1960" maxlength="4" value="2017"></label>
-											<label>Hasta<input type="number" id="date-two" max="2017" min="1960" maxlength="4" value="2017"></label>
-										</section>
-										<section class="container">
-											<div id="btn-enviar">
-												<input type="button" value="buscar" class="btn-submit">
-											</div>
-										</section>
+								<section class="date">
+									<section class="container">
+										<p>AÑO</p>
+										<label>Desde<input type="number" id="date-one" max="2017" min="1960" maxlength="4" value="2017"></label>
+										<label>Hasta<input type="number" id="date-two" max="2017" min="1960" maxlength="4" value="2017"></label>
+									</section>
+									<section class="container">
+										<div id="btn-enviar">
+											<input type="button" value="buscar" class="btn-submit">
+										</div>
 									</section>
 								</section>
+							</section>
 
-									<!--<ul class="nav navbar-nav navbar-right"></ul>-->
+							<!--<ul class="nav navbar-nav navbar-right"></ul>-->
 
 
 				<!--<nav class="navbar navbar-light bg-light">
@@ -181,58 +127,25 @@
 				<!--<div id="INDICADORESDH">INDICADORES DEL DESARROLLO HUMANO-->
 				</div>
 			</div>
-		</br>
-	</div>
-				<!--<p class="text-right">
-					<p id="DATOS">DATOS</p>-->
-				<!--<form class="form-inline">
-						<button class="btn btn-outline-success my-2 my-sm-0" type="submit">País</button>
-						<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Indicador</button>
-					</form>-->
+		</div>
+	</br>
 
-	<!--<section class = "container">        
-	<div class="input-group mb-3">
-	<div class="input-group-prepend">
-		<button class="btn btn-outline-secondary" type="button">País</button>
-			</div>
-	<select class="custom-select" id="inputGroupSelectPais" aria-label="Example select with button addon">
-		<option selected>Choose...</option>
-		<option value="1">Chile</option>
-		<option value="2">Perú</option>
-		<option value="3">Brasil</option>
-		<option value="4">México</option>
-	</select>
-		 </div>
-		 <div class="input-group mb-3">
-		 <div class="input-group-prepend">
-		<button class="btn btn-outline-secondary" type="button">Indicador</button>
-		 </div>
-	<select class="custom-select" id="inputGroupSelectIndicador" aria-label="Example select with button addon">
-		<option selected>Choose...</option>
-		<option value="1">Demográfico</option>
-		<option value="2">Económico</option>
-		<option value="3">Comercial</option>
-	</select>
-		 </div>
-			</section>
-		</div>-->
+	<footer id="footer">
+		<div class="container" style="width: 100%">
+			© 2018 Copyright Text
+			<a class="grey-text text-lighten-4 right" href="http://www.bancomundial.org/">www.bancomundial.org</a>
+		</div>
+	</footer>
 
-		<!-- <div>Footer<div class="modal-footer"> -->
-			<footer>
-				<div class="container-fluid">
-					<p>footer</p>
-				</div>  
-			</footer>    
-
-			<!-- enlaces de scripts-->
-			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-			<script src="./data/worldbank/worldbank.js"></script>
-			<script src="./JS/data.js"></script>
-			<script src="./JS/main.js"></script>
-			<script src="./JS/boots.js"></script>
-		</body>
+	<!-- enlaces de scripts-->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	<script src="./data/worldbank/worldbank.js"></script>
+	<script src="./JS/data.js"></script>
+	<script src="./JS/main.js"></script>
+	<script src="./JS/boots.js"></script>
+</body>
 
 	<!-- Button trigger modal
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
