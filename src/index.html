@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Data Lovers</title>
+	<title>Data World Bank</title>
 	<!--<meta name="viewport" content="width=device-width, user-scalable=no, initial scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
 	<link rel="stylesheet" href="style.css" />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -19,8 +19,8 @@
 					</div>
 					<div class="container">
 						<div class="col-5">
+							
 							<!--mover a la derecha -->
-
 							<nav class="navbar navbar-expand-lg navbar-light bg-light">
 								<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 									<span class="navbar-toggler-icon"></span>
@@ -37,41 +37,56 @@
 						
 						<div id="root">
 
+							
 							<section class="container">
 								<section class="Parámetros">
 									<p>Buscar datos por</p>
 									<!--Select con opciones que se manejarian desde el DOM-->
-									<select id="País">
-										<option value="0">País</option>
-										<option value="México">México</option>
-										<option value="Brasil">Brasil</option>
-										<option value="Perú">Perú</option>
-										<option value="Chile">Chile</option>
-									</select>
+									<main id="countryMain" class="row my-4">
+										<section class="col-12">
+											<select id="selectCountry">
+												<option value="0">País</option>
+												<option value="MEX">México</option>
+												<option value="BRA">Brasil</option>
+												<option value="PER">Perú</option>
+												<option value="CHI">Chile</option>
+											</select>
 
-									<select id="Indicador">
-										<option value="0">Indicador</option>
-										<option value="Demográfico">Demográfico</option>
-										<option value="Económico">Económico</option>
-										<option value="Comercial">Comercial</option>
-									</select>
-								</section>  
+											<main id="indicatorMain" class="row my-4">
+												<section class="col-12">
+													<select id="selectIndicator">
+														<option value="0">Indicador</option>
+														<option value="Demográfico">Demográfico</option>
+														<option value="Económico">Económico</option>
+														<option value="Comercial">Comercial</option>
+													<br>
+												</select>
 
-								<section class="date">
-									<section class="container">
-										<p>AÑO</p>
-										<label>Desde<input type="number" id="date-one" max="2017" min="1960" maxlength="4" value="2017"></label>
-										<label>Hasta<input type="number" id="date-two" max="2017" min="1960" maxlength="4" value="2017"></label>
+													<section class="date">
+														<section class="container">
+															<label>
+																	Año desde
+																	<input type="number" id="date-one" max="2017" min="1960" maxlength="4" value="2017">
+															</label>
+															<label>
+																	Hasta
+																	<input type="number" id="date-two" max="2017" min="1960" maxlength="4" value="2017">
+																</label>
+														</select>
+
+														<section class="container">
+															<div >
+																<input type="button" id="button_buscar" class="btn-submit" value="Buscar"> 
+															</div>
+														</section>
+													</section>
+												</section>
+											</section>
+										</section>
 									</section>
-									<section class="container">
-										<div id="btn-enviar">
-											<input type="button" value="buscar" class="btn-submit">
-										</div>
-									</section>
-								</section>
-							</section>
+								</main>
 
-							<!--<ul class="nav navbar-nav navbar-right"></ul>-->
+								<!--<ul class="nav navbar-nav navbar-right"></ul>-->
 
 
 				<!--<nav class="navbar navbar-light bg-light">
@@ -142,9 +157,11 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 	<script src="./data/worldbank/worldbank.js"></script>
+	<script src="./data/worldbank/worldbank2.js"></script>
 	<script src="./JS/data.js"></script>
 	<script src="./JS/main.js"></script>
 	<script src="./JS/boots.js"></script>
+	<script  type="text/javascript" src="./data/worldbank/worldbank2.js"> </script>
 </body>
 
 	<!-- Button trigger modal

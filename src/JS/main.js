@@ -1,72 +1,42 @@
-// aqui va todo lo del manejo DOM
-//const resultadoPais = nombrePais(dataBank); // guardo en la constante el resultado de mi función nombrePokemones (lo que está retornando)
-//console.log(resultadoNombres);
+/*function buscarPais () {
+	let selectCountry = document.getElementById("selectCountry").value;
+	document.getElementById("selectCountry").addEventListener("click",
+		(event) => {
+			event.preventDefault();
+}  
+}*/ 
 
-//llamo al evento click atraves de addEvent..... y le paso mi funcion
-//document.getElementById('toShow').addEventListener('click', () => {
+window.onload = () => {
+	document.getElementById("button_buscar").addEventListener("click",(event) => {
+		let selectCountry = document.getElementById("selectCountry").value;
+		let selectIndicator = document.getElementById("selectIndicator").value;
+		let selectDateOne = document.getElementById("date-one").value;
+		let selectDateTwo = document.getElementById("date-two").value;
+		console.log({selectCountry,selectIndicator,selectDateOne,selectDateTwo});
 
-//  document.getElementById('ejemplo').innerHTML = ''; // limpio el div cada vez que se hace click
+		
+		console.log(data_bank["PER"]);
 
-//  for (let i = 0; i < resultadoPais.length; i++) {
-//    document.getElementById('ejemplo').innerHTML += '<p>' + resultadoPais[i] + '</p>'; // imprimo en el HTML cada nombre que está dentro de cada posición del arreglo.
-//  }
-//})
+		
+	});  
 
-//console.table (WORLDBANK)
-
-const containerRoot = document.getElementById('root');
-const showData = (WORLDBANK) => {
-	//console.log(WORLDBANK)
-	WORLDBANK.forEach(element => {
-        // element --> WORLDBANK[i]
-        console.log(element.data);
-        
-});
-	
 }
+	
+//`src/data.js`:
+//* `filterData(data, condition)`: esta función `filter` o filtrar recibiría la data, y nos retornaría aquellos datos que sí cumplan con la condición.
 
-//showData(DATA);
-window.onload =showData(WORLDBANK);
+//sortData(data, sortBy, sortOrder)`: esta función `sort` u ordenar recibe tres parámetros. 
+//El primer parámetro, `data`, nos entrega los datos.
+//El segundo parámetro, `sortBy`, nos dice con respecto a cuál de los campos de la data se quiere ordenar.
+//El tercer parámetro, `sortOrder`, indica si se quiere ordenar de manera ascendente o descendente.
+	
+
+	//document.getElementById("selectCountry").addEventListener("click",
+	//	(event) => {
+	//		event.preventDefault();
+
+	//		let selectCountry = document.getElementById("selectCountry").value;
+	//	})
 
 
-
-
-
-
-
-
-
-
-
-
-//document.getElementById("start").addEventListener("click",
-//(event) => {
-//event.preventDefault();
-
-//document.getElementById("page1").style.display="none";
-//document.getElementById("page2").style.display="block";
-
-//document.getElementById("page3").style.display="none";
-//})
-
-//document.getElementById('select').addEventListener("change",()=>{
-
-//document.getElementById('root').innerHTML=''
-// let condicion=document.getElementById('select').value;
-//  for(let i=0; i<filter(datos,condicion).length;i++){
-//      document.getElementById('root').innerHTML += `
-//      <div class="card ">
-//      <div class="col s2 m2">
-    
-//        <div class="card-image">
-//          <img class="responsive-img" src="${filter(datos,condicion)[i]["splash"]}" alt="" HSACE="10" VSPACE="20" width="10" >
-//        </div>
-//        <div class="card-title center">
-          
-//          <span class="card-title center">${filter(datos,condicion)[i]["id"]}</span>
-          
-//        </div>
-//      </div>
-//    </div> `
 //}
-//});

@@ -1,5 +1,5 @@
 header {
-	background: #2c3e50;
+	background: #FFF;
 	color:#FFF;
 }
 
@@ -7,13 +7,12 @@ logo-bank{
 
 }
 
-.main {
-	background: #f2f2f2;
+body {
+	background: default;
 }
 
-.color1 {
-	background: #34495e;
-	color: #FFF;
+.main {
+	background: #f2f2f2;
 }
 
 .navbar-brand {
@@ -27,29 +26,36 @@ logo-bank{
 	display: inline;
 }
 
+#selectCountry {
+	display: inline;
+}
+
+#selectIndicator {
+	display: inline;
+}
 .navbar navbar-expand-lg navbar-light bg-light{
-display: inline;
-text-align: right;
+	display: inline;
+	text-align: right;
 }
 
 .header2 {
-display: inline; 
+	display: inline; 
 
 }
 
 /*.navbar1 {
 	color: #2760be;
-}*/
+	}*/
 
-.indh {
-	background: #f2f2f2;
-	color: #2760be;	
-}
+	.indh {
+		background: #f2f2f2;
+		color: #2760be;	
+	}
 
-#footer{
-    height: 70px;
-    background-color: #19191C;
-    margin-top: 20px;
-    padding: 30px;
-    
-} 
+	#footer{
+		height: 70px;
+		background-color: #363636;
+		margin-top: 30px;
+		padding: 30px;
+
+	} 
